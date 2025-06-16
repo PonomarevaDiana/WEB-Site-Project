@@ -1,0 +1,269 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  body {
+      background-image: url("../images/history_paper.jpg");
+      overflow-x: hidden;
+  }
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2e6b40;
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    font-size: 40pt;
+    font-weight: 1;
+    animation: fadeIn 2s ease-in-out;
+    margin:20px;
+
+  }
+  
+  h2{
+    text-align: center;
+    color: #247430;
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    font-weight: 10 px;
+    font-size: 20pt;
+    animation: fadeIn 2s ease-in-out;
+  
+  }
+  .scale {
+      transition: 1s; /
+    }
+  .scale:hover {
+      transform: scale(1.2);
+  }
+
+
+  nav {
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    background-color: #a8987d;
+    font-size: 4pt;
+    width: 100%;
+    height:50px;
+    margin: -5px auto;
+    padding: 0px;
+    top: 0px;
+    display: block;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav li a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+      background-color: #908868;
+    };
+  
+  .head_container{
+    align-content: stretch;
+    flex-direction: row;
+    width: 100%; 
+    height: 400px;   
+}
+
+  root {
+    color: #fff; 
+    background-color: #212121;
+    font: sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .timeline {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+
+  .outer {
+    border-left: 2px solid #2d9d3d;
+  }
+  
+
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #f8ebef;
+    color: rgb(22, 110, 38);
+    border-radius: 8px;
+    max-width: 1000px;
+
+    h3{
+      text-align: center;
+      color: #4c3200c1;
+      font-family: 'CENTURY GOTHIC', sans-serif;
+      font-weight: 2;
+      font-size: 25pt;
+      line-height: 30px;
+      padding: 10px;
+      }  
+  }
+  
+  .info {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+
+    p{
+    width: 50%;
+    text-align: center;
+    color: #286022;
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    font-weight: 2;
+    font-size: 15pt;
+    line-height: 30px;
+
+    }
+
+    img{
+      width: 50%;
+      height:100%;
+      float: left;
+      margin-right: 10px;
+      object-fit: cover;
+      transition: 0.3s;
+    
+    }
+
+    img:hover{
+      transform: rotateY(180deg);
+    }
+
+  }
+
+  .title {
+    color: rgb(106, 79, 46);
+    position: relative;
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    
+    background: white;
+    border-radius: 999px;
+    left:-48px;
+    border: 3px solid rgb(106, 84, 28);
+  }
+  
+  .persons_block{
+    background: #829d63;
+    h2{
+      font-weight: 1;
+      font-size: 30pt;
+      padding: 20px;
+      color: #fff5d8;
+    }
+  }
+  
+  .persons {
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vmin;
+    overflow: hidden;
+  
+    .card {
+      flex: 1;
+      transition: all 1s ease-in-out;
+      height: 75vmin;
+      position: relative;
+      .card__head {
+        color: rgba(253, 250, 225, 0.752);
+        background: rgb(109, 97, 64);
+        padding: 0.5em;
+        transform: rotate(-90deg);
+        transform-origin: 0% 0%;
+        transition: all 0.5s ease-in-out;
+        min-width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 1em;
+        white-space: nowrap;
+      }
+  
+      &:hover {
+        flex-grow: 10;
+        img {
+          filter: grayscale(0);
+        }
+        .card__head {
+          text-align: center;
+          top: calc(100% - 2em);
+          color: white;
+          background: rgba(190, 122, 163, 0.5);
+          font-size: 1.5em;
+          transform: rotate(0deg);
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s ease-in-out;
+        filter: grayscale(100%);
+      }
+      &:not(:nth-child(5)) {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .end{
+    nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+  }

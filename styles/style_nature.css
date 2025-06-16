@@ -1,0 +1,395 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(249, 247, 219);
+    padding:0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'CENTURY GOTHIC', sans-serif;
+  font-weight: 1;
+  font-size: 40pt;
+  animation: fadeIn 2s ease-in-out;
+}
+  
+h2{
+    text-align: center; 
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    font-size: 20pt;
+    animation: fadeIn 2s ease-in-out; 
+}
+  
+nav {
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    background-color: #93af7e;
+    font-size: 4pt;
+    width: 100%;
+    height:50px;
+    margin: -5px auto;
+    padding: 0px;
+    top: 0px;
+    display: block;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav li a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+      background-color: #7ab64c;
+    };
+    
+  
+  
+  .myFoto{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    overflow-wrap: break-word;
+    border-style:hidden;
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px ;
+  
+  }
+   
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: auto;
+    width: auto;
+    margin-bottom: 0;
+  }
+  table tr td,
+  table tr th {
+    position: relative;
+    text-align: center;
+    border: none;
+    color: #235327;
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    font-weight: 10px;
+    font-size: 15pt;
+    padding: 10px;
+  }
+  
+  .text1{
+    opacity:0;
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform:translate(-50%, 0);
+    transition: 0.5s;
+    width:400px;
+    font-size:15px;
+    background-color:rgb(255, 255, 255);
+    padding:10px;
+    color:#000000;
+    visibility: hidden;
+    box-sizing: border-box;
+    height: auto;
+  } 
+  .blog {
+    position: relative;
+    display: block;
+  }
+  .blog img{
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    height: 250px;
+    display: block; 
+    margin: auto;
+    transition: transform 0.2s ease;
+  }
+  
+  .blog:hover .text1{
+    opacity:1;
+    visibility: visible;
+    z-index:3;
+   
+  }
+  
+  .blog:hover img {
+    position: relative;
+    transform: scale(1.2);
+    z-index:2;
+  }
+  
+  .introduction{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 0px 0px;
+    margin: 1px;
+    height: 450px;
+    background-color: rgb(174, 174, 174);
+    
+
+    .image1{
+      background-color: rgb(174, 174, 174);
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      img{
+        max-height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        margin-bottom: 0px;
+      }
+    }
+
+    .image2{
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      img{
+        max-height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .header_text{
+      background-color: #f5edc7;
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      padding:20px;
+      color:#4d390f;
+      opacity: 0.5;
+
+      h1{
+        text-align: left;;
+        padding: 30px;
+      }
+
+      p{
+
+        text-align: right;
+    font-family: 'CENTURY GOTHIC', sans-serif;
+    font-size: 15pt;
+
+      }
+    }
+  }
+
+
+  .myFoto{
+    text-align: center;
+    color: rgb(15, 92, 29);
+    font-size: 20px;
+    font-family: 'CENTURY GOTIC', sans-serif;
+    overflow-wrap: break-word;
+    border-style:hidden;
+  
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display:block;
+    padding: 0px;
+    span{  
+        display: block;
+        margin: 30px;
+        line-height: 1.5;
+        opacity: 0.6;
+    }
+  }
+
+
+   .nature_zone{
+    background-color: #7ca67e;
+    h2{
+      color:rgb(255, 242, 199);
+      padding: 20px;
+
+    }
+  }
+   
+  
+  .territory{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 420px 40px 200px;
+    width:90%;
+    height: 800px;
+    gap:40px;
+    place-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(15, 92, 29);
+    font-family: 'CENTURY GOTIC', sans-serif;
+    line-height: 1.5;
+    
+    img{
+      max-height: 90%;
+      min-height: 90%;
+      min-width: 90%;
+      max-width: 90%;
+      object-fit: cover;
+      filter: saturate(0.7);  
+    }
+
+    .head{
+      display: block;
+      font-size: 25px;
+      padding: 10px;
+      color:rgb(255, 242, 199);
+      font-weight: 0.5;
+    }
+    .text{
+      font-size: 15px;
+      background-color: #f2e7cee7;
+      padding: 10px;
+      color:rgb(88, 77, 77);
+      border-radius:5%;
+      height: 100%;
+      width: 100%;
+    }
+
+    .text:hover{
+      font-size: 15px;
+      background-color: #1e592c;
+      padding: 10px;
+      color:rgb(255, 255, 255);
+      border-radius:5%;
+      height: 100%;
+      width: 100%;
+      transform: scale(1.2);
+    }
+  }
+
+
+  .zoom-effect {
+    transition: transform 0.2s;
+  }
+  .zoom-effect:hover {
+    transform: scale(1.2);
+    filter: saturate(1.5);
+
+  }
+
+  .decoration_objects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-size: cover; 
+    .text {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center; 
+      
+      h1{
+        font-size: 30pt;
+        color: rgb(255, 247, 227);
+      }
+  
+      img{
+      height: 50%;
+      width: 100%;
+      object-fit: cover;
+      margin: auto;
+      border: 3px solid #1e592c;
+      }
+      img:hover {
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 30px #1e592c,
+                    0 0 40px #1e592c;
+        transition: box-shadow 0.3s ease;
+      }
+    }
+
+  }
+
+  .bottom  {
+    position: absolute;
+    padding: 0px;
+    height: 100px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    
+    nav {
+        font-family: 'CENTURY GOTHIC', sans-serif;
+        font-size: 4pt;
+        background-color: #93af7e;
+        width: 100%;
+        height:100%;
+        margin: 0px auto;
+        padding: 0px;
+        display: block;
+      }
+      
+      nav ul {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+      
+      
+      nav ul li {
+        display: inline-block;
+      }
+      
+      nav li a {
+        color: #ffffff;
+        display: block;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #7ab64c;
+        
+      }
+}
+
+  
+  
+  
